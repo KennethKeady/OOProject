@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ff34d26f"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Celtic Explorer"
+        android:id="@+id/lblTitle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Use Camera"
+        android:id="@+id/btnCamera"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_below="@+id/lblTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:layout_weight="0.30"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:onClick="btnCameraClick" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Find GPS"
+        android:id="@+id/btnGPS"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_below="@+id/lblTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.30"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:onClick="btnGPSClick" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="View Tree"
+        android:id="@+id/btnTree"
+        android:layout_gravity="center"
+        android:layout_alignBaseline="@+id/btnEmail"
+        android:layout_alignBottom="@+id/btnEmail"
+        android:layout_alignLeft="@+id/btnEmail"
+        android:layout_alignStart="@+id/btnEmail"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="0.30"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:onClick="btnTreeClick" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Send Email"
+        android:id="@+id/btnEmail"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnCamera"
+        android:layout_alignStart="@+id/btnCamera"
+        android:layout_marginBottom="75dp"
+        android:layout_weight="0.30"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:onClick="btnEmailClick" />
+
+
+
+
+</LinearLayout>

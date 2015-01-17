@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityActivity"
+    android:background="#ff34d26f"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Hard"
+        android:id="@+id/btnSolid"
+        android:layout_gravity="center"
+        android:layout_above="@+id/btnFlexible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:layout_weight="0.30"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:onClick="btnHardClick" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Squashed"
+        android:id="@+id/btnSquashed"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_below="@+id/lblTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"
+        android:layout_weight="0.30"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:onClick="btnSquashedClick" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Root"
+        android:id="@+id/btnRoot"
+        android:layout_gravity="center"
+        android:layout_alignBaseline="@+id/btnEmail"
+        android:layout_alignBottom="@+id/btnEmail"
+        android:layout_alignLeft="@+id/btnEmail"
+        android:layout_alignStart="@+id/btnEmail"
+        android:layout_marginBottom="75dp"
+        android:layout_weight="0.30"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:onClick="btnRootClick" />
+</LinearLayout>
